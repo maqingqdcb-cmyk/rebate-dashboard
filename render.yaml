@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: rebate-dashboard
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 2
+    envVars:
+      - key: DASHBOARD_PASSWORD
+        value: rebate2026
+      - key: FLASK_SECRET_KEY
+        generateValue: true
+      - key: REFRESH_TOKEN
+        generateValue: true
+      - key: PORT
+        value: 10000
