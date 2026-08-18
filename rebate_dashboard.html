@@ -21,13 +21,15 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC'
 .bh { padding: 14px 20px; display: flex; align-items: center; gap: 20px; }
 .bn { font-size: 18px; font-weight: 700; letter-spacing: 1px; }
 .bm { display: flex; gap: 16px; font-size: 13px; opacity: 0.9; }
-.bchart { padding: 0 20px 12px; }
-.cht { width: 100%; height: 200px; }
+.bchart { padding: 8px 20px 0; }
+.cht { width: 100%; height: 380px; }
+.rs { padding: 12px 20px; border-bottom: 1px solid #f0f0f0; }
+.rs:last-child { border-bottom: none; }
+.rct { font-size: 13px; color: #555; margin-bottom: 4px; }
 .dt { width: 100%; border-collapse: collapse; font-size: 13px; }
-.dt th { background: #fafafa; padding: 8px 12px; font-weight: 600; color: #666; font-size: 12px; border-bottom: 1px solid #eee; }
-.dt td { padding: 7px 12px; border-bottom: 1px solid #f5f5f5; }
+.dt th { background: #fafafa; padding: 6px 10px; font-weight: 600; color: #666; font-size: 12px; border-bottom: 1px solid #eee; }
+.dt td { padding: 5px 10px; border-bottom: 1px solid #f5f5f5; }
 .dt tbody tr:hover { background: #fafafa; }
-.rr td { background: #f8f9fa; font-size: 13px; border-bottom: 2px solid #eee; }
 .r { text-align: right; font-family: 'SF Mono', 'Menlo', monospace; }
 .b { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 11px; font-weight: 500; }
 .g { background: #e8f5e9; color: #2e7d32; }
@@ -42,15 +44,15 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC'
 
 <div class="hd">
     <h1>蓝标欧加海外返点看板</h1>
-    <div class="m">品牌：OPPO / OnePlus / RealMe  |  数据来源：石墨文档「蓝标欧加海外返点汇总表」  |  更新：2026-08-16</div>
+    <div class="m">品牌：OPPO / OnePlus  |  数据来源：石墨文档  |  更新：2026-08-18</div>
 </div>
 
 <div class="c">
     <div class="sr">
-        <div class="sc"><div class="l">总返点金额</div><div class="v" style="color:#1565c0;">$1,666,949.82</div><div class="s">OPPO $1,208,941.59  /  OnePlus $458,008.23</div></div>
-        <div class="sc"><div class="l">已抵扣金额</div><div class="v" style="color:#2e7d32;">$1,088,231.26</div><div class="s">抵扣率 65.28%</div></div>
-        <div class="sc"><div class="l">待抵扣金额</div><div class="v" style="color:#e65100;">$105,957.94</div><div class="s">含待抵扣 + 部分抵扣 + 抵扣中</div></div>
-        <div class="sc"><div class="l">数据规模</div><div class="v" style="color:#7b1fa2;">546</div><div class="s">12 个区域 / 93 个季度</div></div>
+        <div class="sc"><div class="l">总返点金额</div><div class="v" style="color:#1565c0;">$1,666,950</div><div class="s">OPPO $1,208,942  /  OnePlus $458,008</div></div>
+        <div class="sc"><div class="l">已抵扣金额</div><div class="v" style="color:#2e7d32;">$1,509,705</div><div class="s">抵扣率 90.57%</div></div>
+        <div class="sc"><div class="l">待抵扣金额</div><div class="v" style="color:#e65100;">$157,245</div><div class="s">含全款待抵扣记录</div></div>
+        <div class="sc"><div class="l">整体抵扣率</div><div class="v" style="color:#7b1fa2;">90.57%</div><div class="s">已抵扣 $1,509,705  /  待抵扣 $157,245</div></div>
     </div>
 
     
@@ -58,82 +60,269 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC'
         <div class="bh" style="background:#000000;color:white;">
             <div class="bn">OPPO</div>
             <div class="bm">
-                <span>返点总额：$1,208,941.59</span>
-                <span>已抵扣：$756,074.87</span>
-                <span>待抵扣：$87,417.61</span>
-                <span>抵扣率：<strong>62.54%</strong></span>
+                <span>返点总额：$1,208,942</span>
+                <span>已抵扣：$1,073,496</span>
+                <span>待抵扣：$135,445</span>
+                <span>抵扣率：<strong>88.80%</strong></span>
             </div>
         </div>
         <div class="bchart"><div id="ch_OPPO" class="cht"></div></div>
-        <table class="dt"><thead><tr>
-            <th style="width:120px;">区域 / 季度</th>
-            <th class="r" style="width:140px;">返点金额</th>
-            <th class="r" style="width:140px;">已抵扣</th>
-            <th class="r" style="width:140px;">待抵扣</th>
-            <th class="r" style="width:100px;">抵扣率</th>
-            <th style="width:100px;">状态</th>
-        </tr></thead><tbody><tr class="rr"><td><strong>APAC</strong></td><td class="r"><strong>$663,324.02</strong></td><td class="r"><strong>$318,681.72</strong></td><td class="r"><strong>$14,664.18</strong></td><td class="r"><strong style="color:#d32f2f;">48.04%</strong></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2022 Q4</td><td class="r">$77,055.25</td><td class="r">$0.00</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q1</td><td class="r">$67,273.80</td><td class="r">$0.00</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q2</td><td class="r">$22,057.58</td><td class="r">$22,057.58</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q3</td><td class="r">$35,139.02</td><td class="r">$35,139.02</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q4</td><td class="r">$52,270.19</td><td class="r">$52,270.19</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q1</td><td class="r">$35,158.93</td><td class="r">$35,158.93</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q2</td><td class="r">$24,365.52</td><td class="r">$23,449.15</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">96.24%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$52,793.02</td><td class="r">$52,164.41</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">98.81%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$39,061.79</td><td class="r">$37,023.88</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">94.78%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$43,918.41</td><td class="r">$38,393.76</td><td class="r">$5,524.65</td><td class="r"><span style="color:#2e7d32;font-weight:600;">87.42%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$17,572.37</td><td class="r">$8,432.84</td><td class="r">$9,139.53</td><td class="r"><span style="color:#d32f2f;font-weight:600;">47.99%</span></td><td><span class="b o">待抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$32,567.78</td><td class="r">$14,591.96</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">44.80%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q4</td><td class="r">$9,179.44</td><td class="r">$0.00</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td></td></tr><tr class="rr"><td><strong>MENA</strong></td><td class="r"><strong>$173,839.60</strong></td><td class="r"><strong>$150,572.04</strong></td><td class="r"><strong>$12,245.36</strong></td><td class="r"><strong style="color:#2e7d32;">86.62%</strong></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q2</td><td class="r">$15,083.76</td><td class="r">$15,083.76</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$74,173.52</td><td class="r">$73,491.22</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">99.08%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$27,055.00</td><td class="r">$26,649.95</td><td class="r">$405.05</td><td class="r"><span style="color:#2e7d32;font-weight:600;">98.50%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$35,331.14</td><td class="r">$35,265.67</td><td class="r">$65.47</td><td class="r"><span style="color:#2e7d32;font-weight:600;">99.81%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$21,562.26</td><td class="r">$81.44</td><td class="r">$11,774.84</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.38%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$633.92</td><td class="r">$0.00</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td></td></tr><tr class="rr"><td><strong>HQ</strong></td><td class="r"><strong>$133,959.62</strong></td><td class="r"><strong>$130,649.02</strong></td><td class="r"><strong>$0.00</strong></td><td class="r"><strong style="color:#2e7d32;">97.53%</strong></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q2</td><td class="r">$49,673.00</td><td class="r">$49,673.00</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$10,655.08</td><td class="r">$10,655.08</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$40,816.38</td><td class="r">$40,816.38</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$7,447.07</td><td class="r">$7,447.07</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$9,062.47</td><td class="r">$9,062.47</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$5,303.49</td><td class="r">$5,303.49</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q4</td><td class="r">$11,002.13</td><td class="r">$7,691.53</td><td class="r">$0.00</td><td class="r"><span style="color:#e65100;font-weight:600;">69.91%</span></td><td><span class="b g">已抵扣</span></td></tr><tr class="rr"><td><strong>LATAM</strong></td><td class="r"><strong>$120,862.67</strong></td><td class="r"><strong>$91,239.20</strong></td><td class="r"><strong>$20,249.14</strong></td><td class="r"><strong style="color:#e65100;">75.49%</strong></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$34,415.83</td><td class="r">$34,415.83</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$42,808.52</td><td class="r">$42,808.52</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$14,014.85</td><td class="r">$14,014.85</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$20,249.14</td><td class="r">$0.00</td><td class="r">$20,249.14</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$9,374.33</td><td class="r">$0.00</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td></td></tr><tr class="rr"><td><strong>EU</strong></td><td class="r"><strong>$74,661.08</strong></td><td class="r"><strong>$40,327.23</strong></td><td class="r"><strong>$30,827.29</strong></td><td class="r"><strong style="color:#e65100;">54.01%</strong></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q1</td><td class="r">$101.89</td><td class="r">$101.89</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q2</td><td class="r">$12,790.40</td><td class="r">$12,790.40</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$14,766.50</td><td class="r">$14,766.50</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$11,353.35</td><td class="r">$11,353.35</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$4,920.94</td><td class="r">$1,315.09</td><td class="r">$3,605.85</td><td class="r"><span style="color:#d32f2f;font-weight:600;">26.72%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$9,933.96</td><td class="r">$0.00</td><td class="r">$9,933.96</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$20,794.04</td><td class="r">$0.00</td><td class="r">$17,287.48</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b y">部分抵扣</span></td></tr><tr class="rr"><td><strong>SAR</strong></td><td class="r"><strong>$39,198.85</strong></td><td class="r"><strong>$21,509.91</strong></td><td class="r"><strong>$9,431.64</strong></td><td class="r"><strong style="color:#e65100;">54.87%</strong></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q2</td><td class="r">$2,472.46</td><td class="r">$2,472.46</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$8,850.32</td><td class="r">$8,850.32</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$6,723.17</td><td class="r">$6,723.17</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$5,187.61</td><td class="r">$0.00</td><td class="r">$5,187.61</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$3,463.96</td><td class="r">$3,463.96</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$4,244.03</td><td class="r">$0.00</td><td class="r">$4,244.03</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q4</td><td class="r">$8,257.30</td><td class="r">$0.00</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td></td></tr><tr class="rr"><td><strong>IN</strong></td><td class="r"><strong>$3,095.75</strong></td><td class="r"><strong>$3,095.75</strong></td><td class="r"><strong>$0.00</strong></td><td class="r"><strong style="color:#2e7d32;">100.00%</strong></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$3,095.75</td><td class="r">$3,095.75</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr></tbody></table>
+        
+        <div class="rs">
+            <div class="rct"><strong>APAC</strong> — 返点：$663,324 | 已抵扣：$621,505 | 待抵扣：$41,819 | 抵扣率：<span style="color:#2e7d32;">93.70%</span></div>
+            <table class="dt"><thead><tr>
+                <th style="width:120px;">季度</th>
+                <th class="r" style="width:130px;">返点金额</th>
+                <th class="r" style="width:130px;">已抵扣</th>
+                <th class="r" style="width:130px;">待抵扣</th>
+                <th class="r" style="width:90px;">抵扣率</th>
+                <th style="width:100px;">状态</th>
+            </tr></thead><tbody><tr><td style="padding-left:24px;font-size:12px;color:#666;">2022 Q3</td><td class="r">$154,911</td><td class="r">$154,911</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2022 Q4</td><td class="r">$77,055</td><td class="r">$77,055</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q1</td><td class="r">$67,274</td><td class="r">$67,274</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q2</td><td class="r">$22,058</td><td class="r">$22,058</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q3</td><td class="r">$35,139</td><td class="r">$35,139</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q4</td><td class="r">$52,270</td><td class="r">$52,270</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q1</td><td class="r">$35,159</td><td class="r">$35,159</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q2</td><td class="r">$24,366</td><td class="r">$24,366</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$52,793</td><td class="r">$52,793</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$39,062</td><td class="r">$39,062</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$43,918</td><td class="r">$38,394</td><td class="r">$5,525</td><td class="r"><span style="color:#2e7d32;font-weight:600;">87.42%</span></td><td><span class="b y">抵扣中</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$17,572</td><td class="r">$8,433</td><td class="r">$9,140</td><td class="r"><span style="color:#d32f2f;font-weight:600;">47.99%</span></td><td><span class="b y">抵扣中</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$32,568</td><td class="r">$14,592</td><td class="r">$17,976</td><td class="r"><span style="color:#d32f2f;font-weight:600;">44.80%</span></td><td><span class="b y">抵扣中</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q4</td><td class="r">$9,179</td><td class="r">$0</td><td class="r">$9,179</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr></tbody></table>
+        </div>
+        <div class="rs">
+            <div class="rct"><strong>MENA</strong> — 返点：$173,840 | 已抵扣：$151,254 | 待抵扣：$22,585 | 抵扣率：<span style="color:#2e7d32;">87.01%</span></div>
+            <table class="dt"><thead><tr>
+                <th style="width:120px;">季度</th>
+                <th class="r" style="width:130px;">返点金额</th>
+                <th class="r" style="width:130px;">已抵扣</th>
+                <th class="r" style="width:130px;">待抵扣</th>
+                <th class="r" style="width:90px;">抵扣率</th>
+                <th style="width:100px;">状态</th>
+            </tr></thead><tbody><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q2</td><td class="r">$15,084</td><td class="r">$15,084</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$74,174</td><td class="r">$74,174</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$27,055</td><td class="r">$26,650</td><td class="r">$405</td><td class="r"><span style="color:#2e7d32;font-weight:600;">98.50%</span></td><td><span class="b y">抵扣中</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$35,331</td><td class="r">$35,266</td><td class="r">$65</td><td class="r"><span style="color:#2e7d32;font-weight:600;">99.81%</span></td><td><span class="b y">抵扣中</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$21,562</td><td class="r">$81</td><td class="r">$21,481</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.38%</span></td><td><span class="b y">抵扣中</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$634</td><td class="r">$0</td><td class="r">$634</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr></tbody></table>
+        </div>
+        <div class="rs">
+            <div class="rct"><strong>HQ</strong> — 返点：$133,960 | 已抵扣：$128,839 | 待抵扣：$5,121 | 抵扣率：<span style="color:#2e7d32;">96.18%</span></div>
+            <table class="dt"><thead><tr>
+                <th style="width:120px;">季度</th>
+                <th class="r" style="width:130px;">返点金额</th>
+                <th class="r" style="width:130px;">已抵扣</th>
+                <th class="r" style="width:130px;">待抵扣</th>
+                <th class="r" style="width:90px;">抵扣率</th>
+                <th style="width:100px;">状态</th>
+            </tr></thead><tbody><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q2</td><td class="r">$49,673</td><td class="r">$49,673</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$10,655</td><td class="r">$10,655</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$40,816</td><td class="r">$40,816</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$7,447</td><td class="r">$7,447</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$9,062</td><td class="r">$9,062</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$5,303</td><td class="r">$3,494</td><td class="r">$1,810</td><td class="r"><span style="color:#e65100;font-weight:600;">65.87%</span></td><td><span class="b y">抵扣中</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q4</td><td class="r">$11,002</td><td class="r">$7,692</td><td class="r">$3,311</td><td class="r"><span style="color:#e65100;font-weight:600;">69.91%</span></td><td><span class="b y">抵扣中</span></td></tr></tbody></table>
+        </div>
+        <div class="rs">
+            <div class="rct"><strong>LATAM</strong> — 返点：$120,863 | 已抵扣：$91,239 | 待抵扣：$29,623 | 抵扣率：<span style="color:#e65100;">75.49%</span></div>
+            <table class="dt"><thead><tr>
+                <th style="width:120px;">季度</th>
+                <th class="r" style="width:130px;">返点金额</th>
+                <th class="r" style="width:130px;">已抵扣</th>
+                <th class="r" style="width:130px;">待抵扣</th>
+                <th class="r" style="width:90px;">抵扣率</th>
+                <th style="width:100px;">状态</th>
+            </tr></thead><tbody><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$34,416</td><td class="r">$34,416</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$42,809</td><td class="r">$42,809</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$14,015</td><td class="r">$14,015</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$20,249</td><td class="r">$0</td><td class="r">$20,249</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$9,374</td><td class="r">$0</td><td class="r">$9,374</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr></tbody></table>
+        </div>
+        <div class="rs">
+            <div class="rct"><strong>EU</strong> — 返点：$74,661 | 已抵扣：$52,639 | 待抵扣：$22,022 | 抵扣率：<span style="color:#e65100;">70.50%</span></div>
+            <table class="dt"><thead><tr>
+                <th style="width:120px;">季度</th>
+                <th class="r" style="width:130px;">返点金额</th>
+                <th class="r" style="width:130px;">已抵扣</th>
+                <th class="r" style="width:130px;">待抵扣</th>
+                <th class="r" style="width:90px;">抵扣率</th>
+                <th style="width:100px;">状态</th>
+            </tr></thead><tbody><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q1</td><td class="r">$102</td><td class="r">$102</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q2</td><td class="r">$12,790</td><td class="r">$12,790</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$14,766</td><td class="r">$14,766</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$11,353</td><td class="r">$11,353</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$4,921</td><td class="r">$1,384</td><td class="r">$3,536</td><td class="r"><span style="color:#d32f2f;font-weight:600;">28.13%</span></td><td><span class="b y">抵扣中</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$9,934</td><td class="r">$3,512</td><td class="r">$6,422</td><td class="r"><span style="color:#d32f2f;font-weight:600;">35.36%</span></td><td><span class="b y">抵扣中</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$20,794</td><td class="r">$8,731</td><td class="r">$12,063</td><td class="r"><span style="color:#d32f2f;font-weight:600;">41.99%</span></td><td><span class="b y">抵扣中</span></td></tr></tbody></table>
+        </div>
+        <div class="rs">
+            <div class="rct"><strong>SAR</strong> — 返点：$39,199 | 已抵扣：$24,924 | 待抵扣：$14,275 | 抵扣率：<span style="color:#e65100;">63.58%</span></div>
+            <table class="dt"><thead><tr>
+                <th style="width:120px;">季度</th>
+                <th class="r" style="width:130px;">返点金额</th>
+                <th class="r" style="width:130px;">已抵扣</th>
+                <th class="r" style="width:130px;">待抵扣</th>
+                <th class="r" style="width:90px;">抵扣率</th>
+                <th style="width:100px;">状态</th>
+            </tr></thead><tbody><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q2</td><td class="r">$2,472</td><td class="r">$2,472</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$8,850</td><td class="r">$8,850</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$6,723</td><td class="r">$6,723</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$5,188</td><td class="r">$472</td><td class="r">$4,716</td><td class="r"><span style="color:#d32f2f;font-weight:600;">9.10%</span></td><td><span class="b y">抵扣中</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$3,464</td><td class="r">$3,464</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$4,244</td><td class="r">$2,942</td><td class="r">$1,302</td><td class="r"><span style="color:#e65100;font-weight:600;">69.33%</span></td><td><span class="b y">抵扣中</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q4</td><td class="r">$8,257</td><td class="r">$0</td><td class="r">$8,257</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr></tbody></table>
+        </div>
+        <div class="rs">
+            <div class="rct"><strong>IN</strong> — 返点：$3,096 | 已抵扣：$3,096 | 待抵扣：$0 | 抵扣率：<span style="color:#2e7d32;">100.00%</span></div>
+            <table class="dt"><thead><tr>
+                <th style="width:120px;">季度</th>
+                <th class="r" style="width:130px;">返点金额</th>
+                <th class="r" style="width:130px;">已抵扣</th>
+                <th class="r" style="width:130px;">待抵扣</th>
+                <th class="r" style="width:90px;">抵扣率</th>
+                <th style="width:100px;">状态</th>
+            </tr></thead><tbody><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$3,096</td><td class="r">$3,096</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr></tbody></table>
+        </div>
     </div>
     <div class="bs">
         <div class="bh" style="background:#d32f2f;color:white;">
             <div class="bn">OnePlus</div>
             <div class="bm">
-                <span>返点总额：$458,008.23</span>
-                <span>已抵扣：$332,156.39</span>
-                <span>待抵扣：$18,540.33</span>
-                <span>抵扣率：<strong>72.52%</strong></span>
+                <span>返点总额：$458,008</span>
+                <span>已抵扣：$436,208</span>
+                <span>待抵扣：$21,800</span>
+                <span>抵扣率：<strong>95.24%</strong></span>
             </div>
         </div>
         <div class="bchart"><div id="ch_OnePlus" class="cht"></div></div>
-        <table class="dt"><thead><tr>
-            <th style="width:120px;">区域 / 季度</th>
-            <th class="r" style="width:140px;">返点金额</th>
-            <th class="r" style="width:140px;">已抵扣</th>
-            <th class="r" style="width:140px;">待抵扣</th>
-            <th class="r" style="width:100px;">抵扣率</th>
-            <th style="width:100px;">状态</th>
-        </tr></thead><tbody><tr class="rr"><td><strong>EU</strong></td><td class="r"><strong>$126,246.01</strong></td><td class="r"><strong>$120,617.12</strong></td><td class="r"><strong>$5,628.89</strong></td><td class="r"><strong style="color:#2e7d32;">95.54%</strong></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q3</td><td class="r">$13,448.48</td><td class="r">$13,448.48</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q4</td><td class="r">$15,836.51</td><td class="r">$15,836.51</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q1</td><td class="r">$30,104.66</td><td class="r">$30,104.66</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q2</td><td class="r">$5,387.87</td><td class="r">$5,387.87</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$30,766.73</td><td class="r">$30,766.73</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$14,894.63</td><td class="r">$14,894.63</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$10,178.24</td><td class="r">$10,178.24</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$5,628.89</td><td class="r">$0.00</td><td class="r">$5,628.89</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr><tr class="rr"><td><strong>IN</strong></td><td class="r"><strong>$112,773.74</strong></td><td class="r"><strong>$39,776.72</strong></td><td class="r"><strong>$0.00</strong></td><td class="r"><strong style="color:#d32f2f;">35.27%</strong></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q3</td><td class="r">$8,920.74</td><td class="r">$8,920.74</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q4</td><td class="r">$14,692.53</td><td class="r">$0.00</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q1</td><td class="r">$15,556.09</td><td class="r">$0.00</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q2</td><td class="r">$21,523.60</td><td class="r">$0.00</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$23,064.72</td><td class="r">$13,862.09</td><td class="r">$0.00</td><td class="r"><span style="color:#e65100;font-weight:600;">60.10%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$1,408.75</td><td class="r">$1,408.75</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$11,112.21</td><td class="r">$11,112.21</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$4,472.93</td><td class="r">$4,472.93</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$2,014.65</td><td class="r">$0.00</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q4</td><td class="r">$10,007.52</td><td class="r">$0.00</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td></td></tr><tr class="rr"><td><strong>HQ</strong></td><td class="r"><strong>$109,180.00</strong></td><td class="r"><strong>$105,778.99</strong></td><td class="r"><strong>$1,319.68</strong></td><td class="r"><strong style="color:#2e7d32;">96.88%</strong></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q2</td><td class="r">$47,566.75</td><td class="r">$47,566.75</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$55,148.63</td><td class="r">$55,148.63</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$2,081.33</td><td class="r">$0.00</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$135.23</td><td class="r">$135.23</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$1,319.68</td><td class="r">$0.00</td><td class="r">$1,319.68</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$2,928.38</td><td class="r">$2,928.38</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr class="rr"><td><strong>NA</strong></td><td class="r"><strong>$45,046.79</strong></td><td class="r"><strong>$23,382.26</strong></td><td class="r"><strong>$11,591.76</strong></td><td class="r"><strong style="color:#e65100;">51.91%</strong></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$12,435.00</td><td class="r">$12,435.00</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$10,947.26</td><td class="r">$10,947.26</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$10,529.33</td><td class="r">$0.00</td><td class="r">$10,529.33</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b bl">抵扣中</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$1,062.43</td><td class="r">$0.00</td><td class="r">$1,062.43</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$1,245.72</td><td class="r">$0.00</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q4</td><td class="r">$8,827.05</td><td class="r">$0.00</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td></td></tr><tr class="rr"><td><strong>SEA</strong></td><td class="r"><strong>$40,308.01</strong></td><td class="r"><strong>$40,308.01</strong></td><td class="r"><strong>$0.00</strong></td><td class="r"><strong style="color:#2e7d32;">100.00%</strong></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2022 Q3</td><td class="r">$29,582.30</td><td class="r">$29,582.30</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q2</td><td class="r">$10,725.71</td><td class="r">$10,725.71</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr class="rr"><td><strong>RED</strong></td><td class="r"><strong>$24,453.68</strong></td><td class="r"><strong>$2,293.29</strong></td><td class="r"><strong>$0.00</strong></td><td class="r"><strong style="color:#d32f2f;">9.38%</strong></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q3</td><td class="r">$1,247.01</td><td class="r">$1,247.01</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q4</td><td class="r">$13,949.90</td><td class="r">$0.00</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q1</td><td class="r">$3,822.57</td><td class="r">$0.00</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q2</td><td class="r">$4,387.92</td><td class="r">$0.00</td><td class="r">$0.00</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$1,046.28</td><td class="r">$1,046.28</td><td class="r">$0.00</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr></tbody></table>
+        
+        <div class="rs">
+            <div class="rct"><strong>EU</strong> — 返点：$126,246 | 已抵扣：$120,617 | 待抵扣：$5,629 | 抵扣率：<span style="color:#2e7d32;">95.54%</span></div>
+            <table class="dt"><thead><tr>
+                <th style="width:120px;">季度</th>
+                <th class="r" style="width:130px;">返点金额</th>
+                <th class="r" style="width:130px;">已抵扣</th>
+                <th class="r" style="width:130px;">待抵扣</th>
+                <th class="r" style="width:90px;">抵扣率</th>
+                <th style="width:100px;">状态</th>
+            </tr></thead><tbody><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q3</td><td class="r">$13,448</td><td class="r">$13,448</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q4</td><td class="r">$15,837</td><td class="r">$15,837</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q1</td><td class="r">$30,105</td><td class="r">$30,105</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q2</td><td class="r">$5,388</td><td class="r">$5,388</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$30,767</td><td class="r">$30,767</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$14,895</td><td class="r">$14,895</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$10,178</td><td class="r">$10,178</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$5,629</td><td class="r">$0</td><td class="r">$5,629</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr></tbody></table>
+        </div>
+        <div class="rs">
+            <div class="rct"><strong>IN</strong> — 返点：$112,774 | 已抵扣：$112,774 | 待抵扣：$0 | 抵扣率：<span style="color:#2e7d32;">100.00%</span></div>
+            <table class="dt"><thead><tr>
+                <th style="width:120px;">季度</th>
+                <th class="r" style="width:130px;">返点金额</th>
+                <th class="r" style="width:130px;">已抵扣</th>
+                <th class="r" style="width:130px;">待抵扣</th>
+                <th class="r" style="width:90px;">抵扣率</th>
+                <th style="width:100px;">状态</th>
+            </tr></thead><tbody><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q3</td><td class="r">$8,921</td><td class="r">$8,921</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q4</td><td class="r">$14,693</td><td class="r">$14,693</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q1</td><td class="r">$15,556</td><td class="r">$15,556</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q2</td><td class="r">$21,524</td><td class="r">$21,524</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$23,065</td><td class="r">$23,065</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$1,409</td><td class="r">$1,409</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$11,112</td><td class="r">$11,112</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$4,473</td><td class="r">$4,473</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$2,015</td><td class="r">$2,015</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q4</td><td class="r">$10,008</td><td class="r">$10,008</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr></tbody></table>
+        </div>
+        <div class="rs">
+            <div class="rct"><strong>HQ</strong> — 返点：$109,180 | 已抵扣：$104,932 | 待抵扣：$4,248 | 抵扣率：<span style="color:#2e7d32;">96.11%</span></div>
+            <table class="dt"><thead><tr>
+                <th style="width:120px;">季度</th>
+                <th class="r" style="width:130px;">返点金额</th>
+                <th class="r" style="width:130px;">已抵扣</th>
+                <th class="r" style="width:130px;">待抵扣</th>
+                <th class="r" style="width:90px;">抵扣率</th>
+                <th style="width:100px;">状态</th>
+            </tr></thead><tbody><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q2</td><td class="r">$47,567</td><td class="r">$47,567</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$55,149</td><td class="r">$55,149</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$2,081</td><td class="r">$2,081</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$135</td><td class="r">$135</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$1,320</td><td class="r">$0</td><td class="r">$1,320</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$2,928</td><td class="r">$0</td><td class="r">$2,928</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr></tbody></table>
+        </div>
+        <div class="rs">
+            <div class="rct"><strong>NA</strong> — 返点：$45,047 | 已抵扣：$33,124 | 待抵扣：$11,923 | 抵扣率：<span style="color:#e65100;">73.53%</span></div>
+            <table class="dt"><thead><tr>
+                <th style="width:120px;">季度</th>
+                <th class="r" style="width:130px;">返点金额</th>
+                <th class="r" style="width:130px;">已抵扣</th>
+                <th class="r" style="width:130px;">待抵扣</th>
+                <th class="r" style="width:90px;">抵扣率</th>
+                <th style="width:100px;">状态</th>
+            </tr></thead><tbody><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q3</td><td class="r">$12,435</td><td class="r">$12,435</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q4</td><td class="r">$10,947</td><td class="r">$10,947</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$10,529</td><td class="r">$9,741</td><td class="r">$788</td><td class="r"><span style="color:#2e7d32;font-weight:600;">92.52%</span></td><td><span class="b y">抵扣中</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q2</td><td class="r">$1,062</td><td class="r">$0</td><td class="r">$1,062</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q3</td><td class="r">$1,246</td><td class="r">$0</td><td class="r">$1,246</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q4</td><td class="r">$8,827</td><td class="r">$0</td><td class="r">$8,827</td><td class="r"><span style="color:#d32f2f;font-weight:600;">0.00%</span></td><td><span class="b o">待抵扣</span></td></tr></tbody></table>
+        </div>
+        <div class="rs">
+            <div class="rct"><strong>SEA</strong> — 返点：$40,308 | 已抵扣：$40,308 | 待抵扣：$0 | 抵扣率：<span style="color:#2e7d32;">100.00%</span></div>
+            <table class="dt"><thead><tr>
+                <th style="width:120px;">季度</th>
+                <th class="r" style="width:130px;">返点金额</th>
+                <th class="r" style="width:130px;">已抵扣</th>
+                <th class="r" style="width:130px;">待抵扣</th>
+                <th class="r" style="width:90px;">抵扣率</th>
+                <th style="width:100px;">状态</th>
+            </tr></thead><tbody><tr><td style="padding-left:24px;font-size:12px;color:#666;">2022 Q3</td><td class="r">$29,582</td><td class="r">$29,582</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q2</td><td class="r">$10,726</td><td class="r">$10,726</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr></tbody></table>
+        </div>
+        <div class="rs">
+            <div class="rct"><strong>RED</strong> — 返点：$24,454 | 已抵扣：$24,454 | 待抵扣：$0 | 抵扣率：<span style="color:#2e7d32;">100.00%</span></div>
+            <table class="dt"><thead><tr>
+                <th style="width:120px;">季度</th>
+                <th class="r" style="width:130px;">返点金额</th>
+                <th class="r" style="width:130px;">已抵扣</th>
+                <th class="r" style="width:130px;">待抵扣</th>
+                <th class="r" style="width:90px;">抵扣率</th>
+                <th style="width:100px;">状态</th>
+            </tr></thead><tbody><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q3</td><td class="r">$1,247</td><td class="r">$1,247</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2023 Q4</td><td class="r">$13,950</td><td class="r">$13,950</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q1</td><td class="r">$3,823</td><td class="r">$3,823</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2024 Q2</td><td class="r">$4,388</td><td class="r">$4,388</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr><tr><td style="padding-left:24px;font-size:12px;color:#666;">2025 Q1</td><td class="r">$1,046</td><td class="r">$1,046</td><td class="r">$0</td><td class="r"><span style="color:#2e7d32;font-weight:600;">100.00%</span></td><td><span class="b g">已抵扣</span></td></tr></tbody></table>
+        </div>
     </div>
 </div>
 
 <script>
 
-    const r0= ["APAC", "MENA", "HQ", "LATAM", "EU", "SAR", "IN"], d0= [318681.72, 150572.04, 130649.02, 91239.2, 40327.23, 21509.91, 3095.75], p0= [14664.18, 12245.36, 0, 20249.14, 30827.29, 9431.64, 0];
-    const c0= echarts.init(document.getElementById('ch_OPPO'));
-    c0.setOption({
-        tooltip: { trigger: 'axis', formatter: function(p) {
+const cc0= echarts.init(document.getElementById('ch_OPPO'));
+cc0.setOption({
+    tooltip: { trigger: 'axis',
+        formatter: function(p) {
             let s = p[0].name + '<br/>';
-            p.forEach(d => { if (d.value > 0) s += d.marker + d.seriesName + ': ' + Number(d.value).toLocaleString() + '<br/>'; });
+            p.forEach(d => {
+                if (d.seriesName === '抵扣率') s += d.marker + '抵扣率: ' + d.value.toFixed(2) + '%<br/>';
+                else s += d.marker + '返点金额: $' + Number(d.value).toLocaleString() + '<br/>';
+            });
             return s;
-        }},
-        legend: { data: ['已抵扣', '待抵扣'], bottom: 0, textStyle: { fontSize: 11 } },
-        grid: { left: 70, right: 20, top: 10, bottom: 30 },
-        xAxis: { type: 'category', data: r0, axisLabel: { fontSize: 10 } },
-        yAxis: { type: 'value', axisLabel: { formatter: function(v) { return '$' + v.toLocaleString(); } } },
-        series: [
-            { name: '已抵扣', type: 'bar', stack: 'total', data: d0, itemStyle: { color: '#2e7d32' } },
-            { name: '待抵扣', type: 'bar', stack: 'total', data: p0, itemStyle: { color: '#e65100' } }
-        ]
-    });
-    
-    const r1= ["EU", "IN", "HQ", "NA", "SEA", "RED"], d1= [120617.12, 39776.72, 105778.99, 23382.26, 40308.01, 2293.29], p1= [5628.89, 0, 1319.68, 11591.76, 0, 0];
-    const c1= echarts.init(document.getElementById('ch_OnePlus'));
-    c1.setOption({
-        tooltip: { trigger: 'axis', formatter: function(p) {
+        }
+    },
+    legend: { data: ["APAC", "MENA", "HQ", "LATAM", "EU", "SAR", "IN", "抵扣率"], bottom: 2, textStyle: { fontSize: 10 } },
+    grid: { left: 70, right: 50, top: 30, bottom: 50 },
+    xAxis: {
+        type: 'category', data: ["APAC", "MENA", "HQ", "LATAM", "EU", "SAR", "IN"],
+        axisLabel: { fontSize: 11, interval: 0 },
+        splitLine: { show: false }
+    },
+    yAxis: [
+        { type: 'value', name: '返点金额', axisLabel: { formatter: function(v) { return '$' + v.toLocaleString(); }, fontSize: 10 } },
+        { type: 'value', name: '抵扣率', min: 0, max: 100, axisLabel: { formatter: function(v) { return v + '%'; }, fontSize: 10 } }
+    ],
+    series: [
+        {
+            name: '返点金额', type: 'bar', data: [{"value": 663324, "itemStyle": {"color": "#1565c0"}}, {"value": 173840, "itemStyle": {"color": "#e65100"}}, {"value": 133960, "itemStyle": {"color": "#2e7d32"}}, {"value": 120863, "itemStyle": {"color": "#7b1fa2"}}, {"value": 74661, "itemStyle": {"color": "#c62828"}}, {"value": 39199, "itemStyle": {"color": "#00838f"}}, {"value": 3096, "itemStyle": {"color": "#f57f17"}}],
+            barWidth: '55%',
+            label: {
+                show: true, position: 'inside',
+                formatter: function(p) { return p.value > 0 ? '$' + p.value.toLocaleString() : ''; },
+                fontSize: 10, fontWeight: 'bold', color: '#fff'
+            }
+        },
+        {
+            name: '抵扣率', type: 'line', yAxisIndex: 1, data: [93.7, 87.01, 96.18, 75.49, 70.5, 63.58, 100.0],
+            itemStyle: { color: '#d32f2f' },
+            lineStyle: { width: 2, type: 'solid' },
+            symbol: 'diamond', symbolSize: 8,
+            label: {
+                show: true, position: 'top', distance: 6,
+                formatter: function(p) { return p.value.toFixed(1) + '%'; },
+                fontSize: 10, fontWeight: 'bold', color: '#d32f2f'
+            }
+        }
+    ]
+});
+
+const cc1= echarts.init(document.getElementById('ch_OnePlus'));
+cc1.setOption({
+    tooltip: { trigger: 'axis',
+        formatter: function(p) {
             let s = p[0].name + '<br/>';
-            p.forEach(d => { if (d.value > 0) s += d.marker + d.seriesName + ': ' + Number(d.value).toLocaleString() + '<br/>'; });
+            p.forEach(d => {
+                if (d.seriesName === '抵扣率') s += d.marker + '抵扣率: ' + d.value.toFixed(2) + '%<br/>';
+                else s += d.marker + '返点金额: $' + Number(d.value).toLocaleString() + '<br/>';
+            });
             return s;
-        }},
-        legend: { data: ['已抵扣', '待抵扣'], bottom: 0, textStyle: { fontSize: 11 } },
-        grid: { left: 70, right: 20, top: 10, bottom: 30 },
-        xAxis: { type: 'category', data: r1, axisLabel: { fontSize: 10 } },
-        yAxis: { type: 'value', axisLabel: { formatter: function(v) { return '$' + v.toLocaleString(); } } },
-        series: [
-            { name: '已抵扣', type: 'bar', stack: 'total', data: d1, itemStyle: { color: '#2e7d32' } },
-            { name: '待抵扣', type: 'bar', stack: 'total', data: p1, itemStyle: { color: '#e65100' } }
-        ]
-    });
-    
+        }
+    },
+    legend: { data: ["EU", "IN", "HQ", "NA", "SEA", "RED", "抵扣率"], bottom: 2, textStyle: { fontSize: 10 } },
+    grid: { left: 70, right: 50, top: 30, bottom: 50 },
+    xAxis: {
+        type: 'category', data: ["EU", "IN", "HQ", "NA", "SEA", "RED"],
+        axisLabel: { fontSize: 11, interval: 0 },
+        splitLine: { show: false }
+    },
+    yAxis: [
+        { type: 'value', name: '返点金额', axisLabel: { formatter: function(v) { return '$' + v.toLocaleString(); }, fontSize: 10 } },
+        { type: 'value', name: '抵扣率', min: 0, max: 100, axisLabel: { formatter: function(v) { return v + '%'; }, fontSize: 10 } }
+    ],
+    series: [
+        {
+            name: '返点金额', type: 'bar', data: [{"value": 126246, "itemStyle": {"color": "#c62828"}}, {"value": 112774, "itemStyle": {"color": "#f57f17"}}, {"value": 109180, "itemStyle": {"color": "#2e7d32"}}, {"value": 45047, "itemStyle": {"color": "#00695c"}}, {"value": 40308, "itemStyle": {"color": "#283593"}}, {"value": 24454, "itemStyle": {"color": "#ad1457"}}],
+            barWidth: '55%',
+            label: {
+                show: true, position: 'inside',
+                formatter: function(p) { return p.value > 0 ? '$' + p.value.toLocaleString() : ''; },
+                fontSize: 10, fontWeight: 'bold', color: '#fff'
+            }
+        },
+        {
+            name: '抵扣率', type: 'line', yAxisIndex: 1, data: [95.54, 100.0, 96.11, 73.53, 100.0, 100.0],
+            itemStyle: { color: '#d32f2f' },
+            lineStyle: { width: 2, type: 'solid' },
+            symbol: 'diamond', symbolSize: 8,
+            label: {
+                show: true, position: 'top', distance: 6,
+                formatter: function(p) { return p.value.toFixed(1) + '%'; },
+                fontSize: 10, fontWeight: 'bold', color: '#d32f2f'
+            }
+        }
+    ]
+});
+
 window.addEventListener('resize', function() { c0.resize();c1.resize(); });
 </script>
 </body>
